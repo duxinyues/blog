@@ -1,7 +1,7 @@
 /*
  * @Author: yongyuan at <yongyuan253015@gmail.com>
  * @Date: 2021-07-18 10:38:30
- * @LastEditTime: 2021-07-18 11:31:43
+ * @LastEditTime: 2021-07-18 14:59:02
  * @LastEditors: yongyuan at <yongyuan253015@gmail.com>
  * @Description: 
  * @FilePath: \blog\src\App.js
@@ -17,7 +17,9 @@ function App() {
       <Head />
       <article>
          <SiderCustom />
-         <Content>内容</Content>
+         <Content>
+            
+         </Content>
       </article>
    </Layout>
 }

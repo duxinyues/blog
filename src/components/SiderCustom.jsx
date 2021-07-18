@@ -21,15 +21,8 @@ function SiderCustom() {
             </ul>
         </div>
         <div class="tuijian">
-            <h2>推荐</h2>
+            <h2>标签</h2>
             <ul>
-                <li><a href="/">推荐</a></li>
-                <li><a href="/">推荐</a></li>
-                <li><a href="/">推荐</a></li>
-                <li><a href="/">推荐</a></li>
-                <li><a href="/">推荐</a></li>
-                <li><a href="/">推荐</a></li>
-                <li><a href="/">推荐</a></li>
                 <li><a href="/">推荐</a></li>
             </ul>
         </div>
