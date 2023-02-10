@@ -99,14 +99,14 @@ const config = {
         content:
           "前端, react, javascript, css, react, vue, typescript, 博客，阅读，悦读,读心悦",
       },],
-      algolia: {
-        // Algolia 提供的应用 ID
-        appId: 'OR7KJFEBVO',
-        //  公开 API 密钥：提交它没有危险
-        apiKey: '777c8a624308b01b28c2167c8fc40bd9',
-        indexName: 'dx',
-        contextualSearch: true,
-      },
+      // algolia: {
+      //   // Algolia 提供的应用 ID
+      //   appId: 'OR7KJFEBVO',
+      //   //  公开 API 密钥：提交它没有危险
+      //   apiKey: '777c8a624308b01b28c2167c8fc40bd9',
+      //   indexName: 'dx',
+      //   contextualSearch: true,
+      // },
       navbar: {
         title: '读心悦',
         logo: {
@@ -115,10 +115,10 @@ const config = {
         },
         hideOnScroll: true,
         items: [
-          {
-            type: 'search',
-            position: 'right',
-          },
+          // {
+          //   type: 'search',
+          //   position: 'right',
+          // },
           {
             type: "dropdown",
             position: 'left',
