@@ -18,7 +18,7 @@ const config = {
   organizationName: 'duxinyues', // Usually your GitHub org/user name.
   projectName: 'duxinyues.github.io',
   trailingSlash: false,
-  deploymentBranch:"main",
+  deploymentBranch: "main",
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -43,17 +43,9 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          // sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/duxinyues/blog/blob/main',
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
-
-        },
         blog: {
+          path: './blog',
+          routeBasePath: "/",
           blogTitle: '博客',
           blogSidebarTitle: '全部博文',
           editUrl:
@@ -99,14 +91,14 @@ const config = {
         content:
           "前端, react, javascript, css, react, vue, typescript, 博客，阅读，悦读,读心悦",
       },],
-      // algolia: {
-      //   // Algolia 提供的应用 ID
-      //   appId: 'OR7KJFEBVO',
-      //   //  公开 API 密钥：提交它没有危险
-      //   apiKey: '777c8a624308b01b28c2167c8fc40bd9',
-      //   indexName: 'dx',
-      //   contextualSearch: true,
-      // },
+      algolia: {
+        // Algolia 提供的应用 ID
+        appId: '6SSMX931TK',
+        //  公开 API 密钥：提交它没有危险
+        apiKey: 'db3dc38dca391023decfec5d24b357c6',
+        indexName: 'duxinyuesio',
+        contextualSearch: true,
+      },
       navbar: {
         title: '读心悦',
         logo: {
@@ -126,23 +118,23 @@ const config = {
             items: [
               {
                 type: "doc",
-                label: "React源码",
+                label: "React",
                 docId: 'react/react',
               },
             ],
           },
-          {
-            to: '/blog',
-            label: '博客',
-            position: 'left'
-          },
+          // {
+          //   to: '/blog',
+          //   label: '博客',
+          //   position: 'left'
+          // },
           {
             to: '/reading',
             label: '记录生活',
             position: 'left',
           },
           {
-            href: 'https://github.com/duxinyues/docusaurus',
+            href: 'https://github.com/duxinyues/blog',
             label: 'GitHub',
             position: 'right',
           },
