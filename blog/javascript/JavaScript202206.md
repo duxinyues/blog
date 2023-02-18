@@ -44,6 +44,7 @@ fetch("url")
       headers: jsonHeaders
     });
 ```
+
 2. 在请求体中发送参数：
 
 ```javascript

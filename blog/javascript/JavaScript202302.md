@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-id: Reflect
+id: 理解虚拟DOM、innerHTML和JavaScript操作DOM
 title: 理解虚拟DOM、innerHTML和JavaScript操作DOM
 authors: duxinyues
 tags: [JavaScript]

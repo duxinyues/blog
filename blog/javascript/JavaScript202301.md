@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-id: Reflect
+id: JavaScript：Reflect全局对象，对象代理
 title: JavaScript：Reflect全局对象，对象代理
 authors: duxinyues
 tags: [JavaScript]
