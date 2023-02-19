@@ -31,8 +31,8 @@ const config = {
       '@docusaurus/plugin-content-blog',
       {
         id: 'second-blog',
-        blogSidebarTitle: '近期随笔',
-        blogTitle: '记录生活',
+        blogSidebarTitle: '全部笔记',
+        blogTitle: '悦读',
         routeBasePath: 'reading',
         path: './reading',
       },
@@ -121,16 +121,16 @@ const config = {
                 label: "React",
                 docId: 'react/react',
               },
+              {
+                type: "doc",
+                label: "ES6",
+                docId: 'es6/es6',
+              },
             ],
           },
-          // {
-          //   to: '/blog',
-          //   label: '博客',
-          //   position: 'left'
-          // },
           {
             to: '/reading',
-            label: '记录生活',
+            label: '悦读',
             position: 'left',
           },
           {
