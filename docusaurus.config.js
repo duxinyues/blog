@@ -62,20 +62,21 @@ const config = {
       }),
     ],
   ],
-  scripts: [
-    {
-      src:
-        'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3022505615683714',
-      defer: true,
-      crossorigin: "anonymous"
-    },
-    {
-      src:
-        'https://hm.baidu.com/hm.js?50b9e8e9a502f012d28415b01c086e3d',
-      defer: true,
-      crossorigin: "anonymous"
-    },
-  ],
+  // scripts: [
+  //   {
+  //     src:
+  //       'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3022505615683714',
+  //     defer: true,
+  //     crossorigin: "anonymous",
+  //     async:true
+  //   },
+  //   {
+  //     src:
+  //       'https://hm.baidu.com/hm.js?50b9e8e9a502f012d28415b01c086e3d',
+  //     defer: true,
+  //     crossorigin: "anonymous"
+  //   },
+  // ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -98,6 +99,18 @@ const config = {
         apiKey: 'db3dc38dca391023decfec5d24b357c6',
         indexName: 'duxinyuesio',
         contextualSearch: true,
+      },
+      giscus: {
+        repo: 'duxinyues/blog',
+        repoId: 'MDEwOlJlcG9zaXRvcnkzNDEwOTE2NTg=',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOFFSlSs4CUZ-A',
+        theme: 'light_high_contrast',
+        darkTheme: 'dark_tritanopia',
+        lang: "zh-CN",
+        loading: "lazy",
+        crossorigin: "anonymous",
+        mapping:"url"
       },
       navbar: {
         title: '读心悦',
@@ -190,6 +203,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  clientModules: [require.resolve('./src/clientModules/routeModules.ts')]
 };
 
 module.exports = config;
