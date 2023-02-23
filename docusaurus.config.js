@@ -110,7 +110,7 @@ const config = {
         lang: "zh-CN",
         loading: "lazy",
         crossorigin: "anonymous",
-        mapping:"url"
+        mapping:"title",
       },
       navbar: {
         title: '读心悦',
