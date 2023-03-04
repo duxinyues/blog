@@ -134,11 +134,11 @@ const config = {
                 label: "React",
                 docId: 'react/react',
               },
-              {
-                type: "doc",
-                label: "ES6",
-                docId: 'es6/es6',
-              },
+              // {
+              //   type: "doc",
+              //   label: "ES6",
+              //   docId: 'es6/es6',
+              // },
             ],
           },
           {
