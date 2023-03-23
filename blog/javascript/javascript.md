@@ -1,6 +1,5 @@
 ---
 sidebar_position: 9
-id: JavaScript：Ajax
 slug: JavaScript Ajax
 title: JavaScript：Ajax
 authors: duxinyues

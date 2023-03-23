@@ -1,6 +1,5 @@
 ---
 sidebar_position: 6
-id: JavaScript：Fetch
 slug: JavaScript：Fetch
 title: JavaScript：Fetch
 authors: duxinyues

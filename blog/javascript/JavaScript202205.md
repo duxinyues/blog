@@ -1,6 +1,5 @@
 ---
 sidebar_position: 5
-id: JavaScript：File API和Blob API
 slug: JavaScript：File API和Blob API
 title: JavaScript：File API和Blob API
 authors: duxinyues

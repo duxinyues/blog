@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-id: Electron：BrowserView使用方法
+slug: Electron：BrowserView使用方法
 title: Electron：BrowserView使用方法
 authors: duxinyues
 tags: [Electron]

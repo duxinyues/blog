@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-id: electron
+slug: electron
 title: Electron：搭建一个桌面应用
 authors: duxinyues
 tags: [Electron]

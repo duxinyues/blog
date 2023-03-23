@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-id: Electron：窗口、窗口标题和边框
+slug: Electron：窗口、窗口标题和边框
 title: Electron：窗口、窗口标题和边框
 authors: duxinyues
 tags: [Electron]

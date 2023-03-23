@@ -1,6 +1,5 @@
 ---
 sidebar_position: 10
-id: JavaScript：文档加载事件和浏览器的重排、重绘
 title: JavaScript：文档加载事件和浏览器的重排、重绘
 slug: JavaScript：加载文档事件和浏览器重排、重绘
 authors: duxinyues

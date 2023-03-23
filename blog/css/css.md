@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-id: css
+slug: css
 title: CSS：border-image
 authors: duxinyues
 tags: [css]

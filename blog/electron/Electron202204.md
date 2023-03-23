@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-id: Electron：主进程、渲染进程以及通信
+slug: Electron：主进程、渲染进程以及通信
 title: Electron：主进程、渲染进程以及通信
 authors: duxinyues
 tags: [Electron]

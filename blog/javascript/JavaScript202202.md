@@ -1,6 +1,5 @@
 ---
 sidebar_position: 2
-id: JavaScript：客户端存储
 slug: JavaScript：客户端存储
 title: JavaScript：客户端存储
 authors: duxinyues

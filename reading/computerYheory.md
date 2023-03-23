@@ -1,6 +1,5 @@
 ---
 sidebar_position: 0
-id: 计算机组成原理
 slug: 计算机组成原理
 title: 《计算机组成原理》
 authors: duxinyues

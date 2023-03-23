@@ -1,6 +1,5 @@
 ---
 sidebar_position: 11
-id: JavaScript：来一波Promise用法实例，可能是面试题吧
 title: JavaScript：来一波Promise用法实例，可能是面试题吧
 slug: JavaScript：Promise用法
 authors: duxinyues

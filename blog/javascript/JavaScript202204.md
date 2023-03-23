@@ -1,6 +1,5 @@
 ---
 sidebar_position: 4
-id: JavaScript：Promise进阶知识
 slug: JavaScript：Promise进阶
 title: JavaScript：Promise进阶知识
 authors: duxinyues

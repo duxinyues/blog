@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-id: Electron：菜单
+slug: Electron：菜单
 title: Electron：菜单
 authors: duxinyues
 tags: [Electron]

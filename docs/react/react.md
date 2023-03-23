@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-id: react
+slug: react
 title: react源码：目录结构、调试源码
 ---
 我的技术栈是React，最近在整理react的源码，react版本是18.1.0，之前版本，没有看过，就此略过。

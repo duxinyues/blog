@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-id: Electron：如何调用系统对话框【打开文件、保存文件，消息提示】
+slug: Electron：如何调用系统对话框【打开文件、保存文件，消息提示】
 title: Electron：如何调用系统对话框【打开文件、保存文件，消息提示】
 authors: duxinyues
 tags: [Electron]

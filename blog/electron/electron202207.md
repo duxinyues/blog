@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-id: create-react-app创建Electron应用，打包
+slug: create-react-app创建Electron应用，打包
 title: create-react-app创建Electron应用，打包
 authors: duxinyues
 tags: [Electron]

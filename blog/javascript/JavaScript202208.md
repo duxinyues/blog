@@ -1,6 +1,5 @@
 ---
 sidebar_position: 8
-id: JavaScript：DOM操作的性能优化
 slug: JavaScript：DOM操作的性能优化
 title: JavaScript：DOM操作的性能优化
 authors: duxinyues

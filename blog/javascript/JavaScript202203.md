@@ -1,6 +1,5 @@
 ---
 sidebar_position: 3
-id: JavaScript：WebSocket基本使用方法
 slug: JavaScript：WebSocket
 title: JavaScript：WebSocket基本使用方法
 authors: duxinyues

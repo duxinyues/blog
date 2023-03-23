@@ -1,6 +1,5 @@
 ---
 sidebar_position: 7
-id: JavaScript：Encoding和原生拖放事件
 slug: JavaScript：Encoding和原生拖放事件
 title: JavaScript：Encoding和原生拖放事件
 authors: duxinyues

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-id: 《JavaScript百炼成仙》
+slug: 《JavaScript百炼成仙》
 title: 《JavaScript百炼成仙》
 authors: duxinyues
 tags: ["悦读"]

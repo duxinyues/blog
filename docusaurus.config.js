@@ -30,7 +30,7 @@ const config = {
     [
       '@docusaurus/plugin-content-blog',
       {
-        id: 'second-blog',
+        slug: 'second-blog',
         blogSidebarTitle: '全部笔记',
         blogTitle: '悦读',
         routeBasePath: 'reading',
@@ -81,7 +81,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       announcementBar: {
-        id: 'support_us',
+        slug: 'support_us',
         content: '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/duxinyues/blog">GitHub</a>',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
@@ -94,7 +94,7 @@ const config = {
       },],
       algolia: {
         // Algolia 提供的应用 ID
-        appId: '6SSMX931TK',
+        appslug: '6SSMX931TK',
         //  公开 API 密钥：提交它没有危险
         apiKey: 'db3dc38dca391023decfec5d24b357c6',
         indexName: 'duxinyuesio',
@@ -102,9 +102,9 @@ const config = {
       },
       giscus: {
         repo: 'duxinyues/blog',
-        repoId: 'MDEwOlJlcG9zaXRvcnkzNDEwOTE2NTg=',
+        reposlug: 'MDEwOlJlcG9zaXRvcnkzNDEwOTE2NTg=',
         category: 'Announcements',
-        categoryId: 'DIC_kwDOFFSlSs4CUZ-A',
+        categoryslug: 'DIC_kwDOFFSlSs4CUZ-A',
         theme: 'light_high_contrast',
         darkTheme: 'dark_tritanopia',
         lang: "zh-CN",
@@ -132,12 +132,12 @@ const config = {
               {
                 type: "doc",
                 label: "React",
-                docId: 'react/react',
+                docslug: 'react/react',
               },
               // {
               //   type: "doc",
               //   label: "ES6",
-              //   docId: 'es6/es6',
+              //   docslug: 'es6/es6',
               // },
             ],
           },
