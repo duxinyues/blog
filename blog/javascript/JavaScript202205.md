@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 id: JavaScript：File API和Blob API
+slug: JavaScript：File API和Blob API
 title: JavaScript：File API和Blob API
 authors: duxinyues
 tags: [JavaScript]
@@ -8,6 +9,7 @@ tags: [JavaScript]
 web应用的痛点就是不能操作计算机上的文件。File API和Blob API可以安全访问到客户端上的文件。
 
 ## File类型
+
 现在我们可以在html表单中直接访问文件，比如：
 
 ```javascript
@@ -38,6 +40,7 @@ web应用的痛点就是不能操作计算机上的文件。File API和Blob API�
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/9c038c29f32e4918bd41851c06f3bc04.png)
 
 #### FileReader类型
+
 FileReader类型是一种异步文件读取机制，提供了集中读取文件数据的方法：
 
 readAsText(file,encoding)：从文件中读取纯文本内容并且保存在result属性中，第二个参数是表示编码，可选参数。
@@ -119,7 +122,8 @@ load事件会在成功加载后触发，如果error事件触发，那么不会�
 </html>
 
 ```
- ## Blob
+
+## Blob
 
 Blob是表示二进制大对象，是JavaScript对不可修改的二进制数据的封装类型，包含字符串的数组、ArrayBuffers、ArrayBufferViews，
 
@@ -170,7 +174,9 @@ Blob对象有一个size属性和type属性，slice方法用于进一步切分数
 </html>
 
 ```
+
 #### Blob URL
+
 是引用存储在File或者Blob中数据的URL，有点就是不用把文件内容读取到JavaScript中可以使用文件，只需要在对应位置提供对象的URL即可。创建对象URL，使用window.URL.createObjectURL()方法，传入File或者Blob对象，它返回一个指向内存中地址的字符串。比如：
 
 ```javascript
@@ -216,4 +222,5 @@ Blob对象有一个size属性和type属性，slice方法用于进一步切分数
 </html>
 
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/c178f3879caa4192b7ab92b8ea1208ac.png)

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 id: JavaScript：WebSocket基本使用方法
+slug: JavaScript：WebSocket
 title: JavaScript：WebSocket基本使用方法
 authors: duxinyues
 tags: [JavaScript]
@@ -16,9 +17,11 @@ WebSocket让实时通信更加有效，可以节约带宽、CPU资源并减少�
 WebSocket连接通过在客户端和服务端之间第一次握手的时候将http协议升级到WebSocket协议来完成，这个过程在相同的底层TCP连接上进行。
 
 ## 创建WebSocket连接
+
 首先调用WebSocket构造函数，创建一个WebSocket连接，构造函数返回的WebSocket对象实例。
 
-#### 建立客户端的WebSocket连接
+### 建立客户端的WebSocket连接
+
 使用WebSocket接口，通过指向一个表示所要连接端点的URL，实例化一个WebSocket对象。
 
 WebSocket协议定义了两种URL：ws和wss。和HTTP、HTTPS类似，表示非加密和加密数据。wss表示使用传输层安全性的WebSocket连接。
@@ -37,13 +40,16 @@ WebSocket构造函数有一个必填的URL和可选参数protocols，URL是指�
         
     </script>
 ```
+
 和所有的Web API事件一样，使用on+事件名称来处理属性监听这些事件。WebSocket对象调度4个不同的事件：
+
 1. open，当服务器响应了WebSocket连接请求，那么open事件触发并且建立一个连接，open事件对应的回调函数就是onopen。
 2. message，在接收到消息时候触发，对应事件的回调函数是onmessage，
 3. error，在响应意外故障的时候触发，对应的回调函数是onerror。错误还会导致WebSocket连接关闭。
 4. close，在WebSocket连接关闭的时候触发，对应的回调函数是onclose。一旦连接关闭，那么客户端或者服务器就不再能接收或者发送信息。
 
 ## 创建服务端的WebSocket
+
 代码如下：
 
 ```javascript
@@ -67,6 +73,7 @@ wsServer.on("connection",function(socket){
     })
 })
 ```
+
 index.html代码：
 
 ```javascript

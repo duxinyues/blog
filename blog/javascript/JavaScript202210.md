@@ -2,6 +2,7 @@
 sidebar_position: 10
 id: JavaScript：文档加载事件和浏览器的重排、重绘
 title: JavaScript：文档加载事件和浏览器的重排、重绘
+slug: JavaScript：加载文档事件和浏览器重排、重绘
 authors: duxinyues
 tags: [JavaScript]
 ---
@@ -12,6 +13,7 @@ ready事件的触发表示文档结构已经加载完成，不包含图片、fla
 onload事件的触发表示页面图片、flash这些所有元素已经加载完成。
 
 ## load事件
+
 load事件，在页面、脚本或者图片加载完成后触发的，支持onload事件的标签元素有body、frame、frameset、iframe、img、link和script。
 
 这个load事件的使用，有两种方式：
@@ -26,6 +28,7 @@ load事件，在页面、脚本或者图片加载完成后触发的，支持onlo
     </script>
 </body>
 ```
+
 2、设置window对象的onload属性，属性值为一个函数，比如：
 
 ```javascript
@@ -33,6 +36,7 @@ load事件，在页面、脚本或者图片加载完成后触发的，支持onlo
         console.log("文档加载完成，执行load事件2222")
        }
 ```
+
 如果这两种方式同时设置的话，只有第二种方式生效，因为在JavaScript里面声明的事件优先级高于在标签元素内声明的属性事件。如下代码：
 
 ```html
@@ -48,12 +52,14 @@ load事件，在页面、脚本或者图片加载完成后触发的，支持onlo
     </script>
 </body>
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/ac13eede8224403e81da4bf006efe081.png)
 load事件的使用，很多情况下是因为我们把JavaScript单独写在一个文件中，然后在head内引入或者是直接在head使用script标签便携JavaScript代码。
 
 然而head标签是优先于body标签进行解析的，如果这时候JavaScript代码中含有对body内其他标签的处理，就会出现代码中操作的对象未被加载的情况，例如：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/a80eb3db0c374f84918a540cc8442ddf.png)
 源码：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -74,6 +80,7 @@ load事件的使用，很多情况下是因为我们把JavaScript单独写在一
 
 </html>
 ```
+
 想要解决这个问题就是使用load事件，会在页面所有元素加载完成后再去调用。
 
 ```html
@@ -98,6 +105,7 @@ load事件的使用，很多情况下是因为我们把JavaScript单独写在一
 
 </html>
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/a33c97eb65c94015b29332501ac3786f.png)
 
 ## 浏览器的重排、重绘
@@ -110,8 +118,10 @@ load事件的使用，很多情况下是因为我们把JavaScript单独写在一
 
 那么重绘和重排是发生在第三步和第四步。
 
-####  重排
+#### 重排
+
 在对某一个DOM节点信息进行修改的时候，需要对该DOM结构进行重新运算，会改动周边其他DOM的位置，重排就是一种明显修改页面布局的操作。常见引起重排的操作：
+
 1. 页面首次渲染，html页面中的元素位置、大小这些信息都是位置，需要和css样式规则集才能确定元素的信息，这个过程会产生很多元素的几何运算过程，所以发生重排
 2. 浏览器窗口大小发生变化的时候，渲染树会从根元素html标签开始的所有元素都会重新计算几何信息，产生重排；
 3. 元素尺寸或者位置发生改变
@@ -143,6 +153,7 @@ load事件的使用，很多情况下是因为我们把JavaScript单独写在一
 · getComputedStyle()：获取元素的CSS样式的函数。
 · getBoundingClientRect()：获取元素相对于视窗的位置集合的函数。
 ```
-#### 重绘
-重绘就是改变元素在页面中的展现样式，不会引起元素在文档流中位置的变化。比如文字颜色，背景和透明度等等。
 
+#### 重绘
+
+重绘就是改变元素在页面中的展现样式，不会引起元素在文档流中位置的变化。比如文字颜色，背景和透明度等等。

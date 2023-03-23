@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 id: JavaScript：错误处理
+slug: JavaScript：错误处理
 title: JavaScript：错误处理
 authors: duxinyues
 tags: [JavaScript]

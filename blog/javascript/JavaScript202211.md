@@ -2,12 +2,14 @@
 sidebar_position: 11
 id: JavaScript：来一波Promise用法实例，可能是面试题吧
 title: JavaScript：来一波Promise用法实例，可能是面试题吧
+slug: JavaScript：Promise用法
 authors: duxinyues
 tags: [JavaScript]
 ---
 对Promise有一定的了解后，但是在面对一些关于Promise的面试，还是感觉力不从心。现在整理一下Promise的使用场景：
 
 ###### 1、Promise和同步代码一起执行
+
 看一下这段代码的结果是什么？
 
 ```javascript
@@ -22,10 +24,12 @@ promise.then(()=>{
 
 console.log(4)
 ```
+
 promise创建后就立即执行，那就或输出1，2，4。
 resolve或者reject函数会在同步代码之后执行，等到resolve或者reject执行后，就进入了then或者catch函数。所以最好才输出3。
 
 ###### 2、同一个Promise实例内resolve和reject执行先后
+
 代码如下：
 
 ```javascript
@@ -40,12 +44,14 @@ promise.then((res)=>{
     console.log("catch",err)
 })
 ```
+
 会输出什么样的结果呢？
 答案是then 1。
 
 要记住，promise状态的变更只有一次，当执行resolve或者reject，就完成一次状态变更。
 
 ###### 3、promise实例重复执行
+
 代码如下：
 
 ```javascript
@@ -66,11 +72,13 @@ promise.then(res => {
     console.log(res, Date.now() - start)
 })
 ```
+
 答案是一秒后输出1， 2 1017，2 1017
 
 当promise实例变更状态后，就会触发所有的then或者catch函数，所以上面的代码中第一个then和第二个then函数执行的结果是一样的。
 
 ###### 4、在then函数返回一个异常
+
 代码如下：
 
 ```javascript
@@ -87,6 +95,7 @@ promise.then((res) => {
     console.log("Error", err)
 })
 ```
+
 答案是：
 20
 22
@@ -110,11 +119,13 @@ promise.then((res) => {
     console.log("Error", err)
 })
 ```
+
 输出结果：
 20
 Error Error: Error
 
 ###### 5、then的参数不是函数
+
 代码如下：
 
 ```javascript

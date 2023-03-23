@@ -2,6 +2,7 @@
 sidebar_position: 0
 id: 理解虚拟DOM、innerHTML和JavaScript操作DOM
 title: 理解虚拟DOM、innerHTML和JavaScript操作DOM
+slug: 虚拟DOM、innerHTML和JavaScript操作事件
 authors: duxinyues
 tags: [JavaScript]
 ---
