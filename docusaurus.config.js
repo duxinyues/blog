@@ -120,14 +120,10 @@ const config = {
         },
         hideOnScroll: true,
         items: [
-          // {
-          //   type: 'search',
-          //   position: 'right',
-          // },
           {
             type: "dropdown",
             position: 'left',
-            label: '文档',
+            label: '前端框架',
             items: [
               {
                 type: "doc",
