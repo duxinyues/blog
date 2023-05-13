@@ -32,7 +32,7 @@ const config = {
       {
         id: 'second-blog',
         blogSidebarTitle: '全部笔记',
-        blogTitle: '悦读',
+        blogTitle: '技术书籍',
         routeBasePath: 'reading',
         path: './reading',
       },
@@ -139,7 +139,7 @@ const config = {
           },
           {
             to: '/reading',
-            label: '悦读',
+            label: '技术书籍',
             position: 'left',
           },
           {
