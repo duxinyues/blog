@@ -2,7 +2,7 @@
  * @Author: duxinyues yongyuan253015@gmail.com
  * @Date: 2023-10-14 11:41:20
  * @LastEditors: duxinyues yongyuan253015@gmail.com
- * @LastEditTime: 2023-10-14 13:26:23
+ * @LastEditTime: 2023-10-14 15:20:27
  * @FilePath: /blog/docusaurus.config.js
  * @Description: 
  * Copyright (c) 2023 by ${duxinyues} email: ${yongyuan253015@gmail.com}, All Rights Reserved.
@@ -83,10 +83,21 @@ const config = {
     [
       "@docusaurus/plugin-content-blog",
       {
-        id: "secret-electron",
-        routeBasePath: "electron",
-        path: "./electron",
-        blogSidebarTitle:"electron基础"
+        id: "secret-javascript",
+        routeBasePath: "javaScript",
+        path: "./javascript",
+        blogSidebarTitle:"javascript基础",
+        blogSidebarCount: 'ALL',
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "secret-css",
+        routeBasePath: "css",
+        path: "./css",
+        blogSidebarTitle:"css基础",
+        blogSidebarCount: 'ALL',
       },
     ],
   ],
@@ -207,6 +218,20 @@ const config = {
                 // docId: 'electron/electron',
                 // to: 'docs/electron/electron',
                 to: 'electron'
+              },
+              {
+                // type: "doc",
+                label: "CSS",
+                // docId: 'electron/electron',
+                // to: 'docs/electron/electron',
+                to: 'css'
+              },
+              {
+                // type: "doc",
+                label: "JavaScript",
+                // docId: 'electron/electron',
+                // to: 'docs/electron/electron',
+                to: 'javaScript'
               },
             ],
           },

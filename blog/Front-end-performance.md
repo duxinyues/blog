@@ -2,7 +2,6 @@
 sidebar_position: 0
 slug:  前端性能
 title:  前端性能
-authors: duxinyues
 tags: [前端性能]
 ---
 

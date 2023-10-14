@@ -2,7 +2,6 @@
 sidebar_position: 0
 slug:  babel
 title:  babel
-authors: duxinyues
 tags: [配置]
 ---
 

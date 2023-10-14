@@ -2,7 +2,6 @@
 sidebar_position: 0
 slug:  webpack基本配置
 title:  webpack基本配置
-authors: duxinyues
 tags: [配置]
 ---
 
