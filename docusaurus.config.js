@@ -1,3 +1,12 @@
+/*
+ * @Author: duxinyues yongyuan253015@gmail.com
+ * @Date: 2023-10-14 11:41:20
+ * @LastEditors: duxinyues yongyuan253015@gmail.com
+ * @LastEditTime: 2023-10-14 13:26:23
+ * @FilePath: /blog/docusaurus.config.js
+ * @Description: 
+ * Copyright (c) 2023 by ${duxinyues} email: ${yongyuan253015@gmail.com}, All Rights Reserved.
+ */
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
@@ -35,8 +44,51 @@ const config = {
         blogTitle: '技术书籍',
         routeBasePath: 'reading',
         path: './reading',
+      }
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "secret-garden",
+        routeBasePath: "lifestyle",
+        path: "./lifestyle",
+        blogSidebarTitle:"生活随笔"
+        // feedOptions: {
+        //   type: "all",
+        //   title: "",
+        //   copyright: `Copyright © ${new Date().getFullYear()}  Built with Docusaurus.<p></p>`,
+        // },
       },
-    ]
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "secret-java",
+        routeBasePath: "java",
+        path: "./java",
+        blogSidebarTitle:"Java基础",
+        blogSidebarCount: 'ALL',
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "secret-react",
+        routeBasePath: "react",
+        path: "./react",
+        blogSidebarTitle:"react基础",
+        blogSidebarCount: 'ALL',
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "secret-electron",
+        routeBasePath: "electron",
+        path: "./electron",
+        blogSidebarTitle:"electron基础"
+      },
+    ],
   ],
   presets: [
     [
@@ -69,12 +121,6 @@ const config = {
   //     defer: true,
   //     crossorigin: "anonymous",
   //     async:true
-  //   },
-  //   {
-  //     src:
-  //       'https://hm.baidu.com/hm.js?50b9e8e9a502f012d28415b01c086e3d',
-  //     defer: true,
-  //     crossorigin: "anonymous"
   //   },
   // ],
   themeConfig:
@@ -110,7 +156,7 @@ const config = {
         lang: "zh-CN",
         loading: "lazy",
         crossorigin: "anonymous",
-        mapping:"title",
+        mapping: "title",
       },
       navbar: {
         title: '读心悦',
@@ -118,35 +164,63 @@ const config = {
           alt: '读心悦',
           src: 'img/logo.jpg',
         },
-        hideOnScroll: true,
+        // hideOnScroll: true,
         items: [
           {
-            type: "dropdown",
-            position: 'left',
-            label: '前端框架',
+            to: "/",
+            label: "首页",
+            position: "right",
             items: [
               {
-                type: "doc",
-                label: "React",
-                docId: 'react/react',
-              },
-              {
-                type: "doc",
-                label: "Electron",
-                docId: 'electron/electron',
+                label: "随笔",
+                to: "lifestyle",
               },
             ],
           },
           {
+            label: "后端",
+            position: "right",
+            to: "/java",
+            items: [
+              {
+                label: "Java",
+                to: "java",
+              },
+            ],
+          },
+
+          {
+            // type: "dropdown",
+            position: 'right',
+            label: '前端',
+            items: [
+              {
+                // type: "doc",
+                label: "React",
+                // docId: 'react/react',
+                // to: 'docs/react/react',
+                to: 'react',
+              },
+              {
+                // type: "doc",
+                label: "Electron",
+                // docId: 'electron/electron',
+                // to: 'docs/electron/electron',
+                to: 'electron'
+              },
+            ],
+          },
+
+          {
             to: '/reading',
             label: '技术书籍',
-            position: 'left',
-          },
-          {
-            href: 'https://github.com/duxinyues/blog',
-            label: 'GitHub',
             position: 'right',
           },
+          // {
+          //   href: 'https://github.com/duxinyues/blog',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       // footer: {
