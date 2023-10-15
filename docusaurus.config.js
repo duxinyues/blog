@@ -83,6 +83,16 @@ const config = {
     [
       "@docusaurus/plugin-content-blog",
       {
+        id: "secret-electron",
+        routeBasePath: "electron",
+        path: "./electron",
+        blogSidebarTitle:"electron基础",
+        blogSidebarCount: 'ALL',
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
         id: "secret-javascript",
         routeBasePath: "javaScript",
         path: "./javascript",
