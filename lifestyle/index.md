@@ -1,7 +1,0 @@
-{
-    "label": "React",
-    "position": 0,
-    "link": {
-      "type": "generated-index"
-    }
-  }

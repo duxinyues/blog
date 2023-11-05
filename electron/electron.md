@@ -35,89 +35,89 @@ index.html：
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
     />
     <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
+            http-equiv="X-Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
     />
     <title>djdfj</title>
-    <link rel="stylesheet" type="text/css" href="./index.css" />
-  </head>
+    <link rel="stylesheet" type="text/css" href="./index.css"/>
+</head>
 
-  <body>
-    <h1>Hello World!哈哈哈</h1>
-    We are using Node.js <span id="node-version"></span>, Chromium
-    <span id="chrome-version"></span>, and Electron
-    <span id="electron-version"></span>.
-    <p>Current theme source: <strong id="theme-source">System</strong></p>
+<body>
+<h1>Hello World!哈哈哈</h1>
+We are using Node.js <span id="node-version"></span>, Chromium
+<span id="chrome-version"></span>, and Electron
+<span id="electron-version"></span>.
+<p>Current theme source: <strong id="theme-source">System</strong></p>
 
-    <button id="toggle-dark-mode">Toggle Dark Mode</button>
-    <button id="reset-to-system">Reset to System Theme</button>
+<button id="toggle-dark-mode">Toggle Dark Mode</button>
+<button id="reset-to-system">Reset to System Theme</button>
 
-    <button id="openDevTool">打开开发工具</button>
-    <script src="renderer.js"></script>
-    <script>
-      let { remote } = require("electron");
-      console.log("remote", remote);
-      document.querySelector("#openDevTool").addEventListener("click", () => {
+<button id="openDevTool">打开开发工具</button>
+<script src="renderer.js"></script>
+<script>
+    let {remote} = require("electron/electron");
+    console.log("remote", remote);
+    document.querySelector("#openDevTool").addEventListener("click", () => {
         remote.getCurrentWindow().webContents.openDevTool();
-      });
-    </script>
-  </body>
+    });
+</script>
+</body>
 </html>
 ```
 
 index.js:
 
 ```javascript
-const { app, BrowserWindow, ipcMain, nativeTheme } = require("electron");
+const {app, BrowserWindow, ipcMain, nativeTheme} = require("electron/electron");
 const path = require("path");
 
 function createWindow() {
-  const win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
-      nodeIntegration: true,
-    },
-  });
+    const win = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            preload: path.join(__dirname, "preload.js"),
+            nodeIntegration: true,
+        },
+    });
 
-  win.loadFile("index.html");
-  ipcMain.handle("dark-mode:toggle", () => {
-    if (nativeTheme.shouldUseDarkColors) {
-      nativeTheme.themeSource = "light";
-    } else {
-      nativeTheme.themeSource = "dark";
-    }
-    return nativeTheme.shouldUseDarkColors;
-  });
+    win.loadFile("index.html");
+    ipcMain.handle("dark-mode:toggle", () => {
+        if (nativeTheme.shouldUseDarkColors) {
+            nativeTheme.themeSource = "light";
+        } else {
+            nativeTheme.themeSource = "dark";
+        }
+        return nativeTheme.shouldUseDarkColors;
+    });
 
-  ipcMain.handle("dark-mode:system", () => {
-    nativeTheme.themeSource = "system";
-  });
+    ipcMain.handle("dark-mode:system", () => {
+        nativeTheme.themeSource = "system";
+    });
 }
 
 app.whenReady().then(() => {
-  createWindow();
+    createWindow();
 
-  app.on("activate", () => {
-    if (BrowserWindow.getAllWindows().length === 0) {
-      createWindow();
-    }
-  });
+    app.on("activate", () => {
+        if (BrowserWindow.getAllWindows().length === 0) {
+            createWindow();
+        }
+    });
 });
 
 app.on("window-all-closed", () => {
-  if (process.platform !== "darwin") {
-    app.quit();
-  }
+    if (process.platform !== "darwin") {
+        app.quit();
+    }
 });
 ```
 

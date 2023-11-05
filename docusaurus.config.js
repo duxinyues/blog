@@ -4,7 +4,7 @@
  * @LastEditors: duxinyues yongyuan253015@gmail.com
  * @LastEditTime: 2023-10-14 15:20:27
  * @FilePath: /blog/docusaurus.config.js
- * @Description: 
+ * @Description:
  * Copyright (c) 2023 by ${duxinyues} email: ${yongyuan253015@gmail.com}, All Rights Reserved.
  */
 // @ts-check
